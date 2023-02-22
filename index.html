@@ -1,0 +1,98 @@
+<html lang="vi"
+    __fvdsurfcanyoninserted="1"
+    class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    "
+>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="intro.css">
+        <link rel="stylesheet" href="intro.js">
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./MyBirthday_music.mp3">
+        
+        <script>
+            window.open = function () {};
+            window.print = function () {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function () {};
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+        ></script>
+        <meta content="clickberry-extension-here" />
+    </head>
+
+    <body>
+        <link
+            href="https://fonts.googleapis.com/css?family=Wendy+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <div class="pyro">
+            <div class="before">
+                
+            </div>
+            <div class="after">
+
+            </div>
+            <div class="container">
+                <!-- 2. Dòng chữ Happy Birthday
+                Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+                <div class="balloon">
+                    <div><span>H</span></div>
+                    <div><span>A</span></div>
+                    <div><span>P</span></div>
+                    <div><span>P</span></div>
+                    <div><span>Y</span></div>
+                    <div><span>B</span></div>
+                    <div><span>I</span></div>
+                    <div><span>R</span></div>
+                    <div><span>T</span></div>
+                    <div><span>H</span></div>
+                    <div><span>D</span></div>
+                    <div><span>A</span></div>
+                    <div><span>Y</span></div>
+                </div>
+                <div class="avatar">
+                    <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                    <img src="https://scontent.fhan1-1.fna.fbcdn.net/v/t39.30808-6/332903943_1208431039813618_4711630451598274278_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=oMaAZTzZq2wAX_Aqrx7&_nc_ht=scontent.fhan1-1.fna&oh=00_AfCrRw46yAnaBu-VjHcpEOKXu8zx1RNaEMBvC9GyiwU-jA&oe=63FBB191" alt="" class="avatar__img" onclick="showMessage()" />
+                    <!-- 4. Tên của người đó -->
+                    <h1 onclick="showMessage()" class="avatar__title">PHƯƠNG XÚY XINH ĐẸP</h1>
+                </div>
+                
+                <!-- 5. Phần nhạc -->
+                <!-- <audio id="player" autoplay loop>
+                    <source src="./music.mp3" type="audio/mp3">
+                </audio> -->
+            </div>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
+                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                swal({
+                    title: "Lời nhắn", // Tiêu đề của popup
+                    text: "GỬI ĐẾN CÔ GÁI 20 TUỔI,MỘT TUỔI MỚI ZUI ZẺ ,TRÀN ĐẦY NĂNG ĐỘNG ,MÃI MÃI XUYN ĐẸP VÀ ĐẠT ĐC NHIỀU NIỀM VUI NHÉ", // Nội dung lời nhắn
+                    button: {
+                        text: "❤️️",
+                    },
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
